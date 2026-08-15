@@ -10,10 +10,19 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
       <div className="grid min-h-screen lg:grid-cols-[1fr_1.1fr]">
         {/* left side of auth page */}
         <section className="relative hidden overflow-hidden lg:block">
-          {/* heading */}
-          <div className="absolute top-[14%] left-[7%] z-10">
+          <div className="absolute top-[13%] left-[8%] z-10">
             <h1 className="text-4xl font-bold tracking-tight">Satellite Seeker</h1>
           </div>
+
+          <img
+            src="/earth.png"
+            className="absolute top-[25%] left-[10%] w-[280px] object-contain"
+          />
+
+          <img
+            src="/satellite.png"
+            className="absolute top-[55%] left-[50%] w-[270px] object-contain"
+          />
         </section>
 
         {/* right side of auth page */}
